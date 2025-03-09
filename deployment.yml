@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-django-blog-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-django-blog
+  template:
+    metadata:
+      labels:
+       app: my-django-blog
+    spec:
+      containers:
+      - name: my-django-blog-container
+        image: ptikoo/my-django-blog
+        ports:
+        - containerPort: 8000

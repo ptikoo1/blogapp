@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ post.title }}</title>
+	</head>
+	<body>
+		<h2><a href="{% url 'post_list' %}">Home</a></h2>
+		<h1>{{ post.title }}</h1>
+		<p>{{ post.published_date }}</p>
+		<p>{{ post.content }}</p>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create New Post</title>
+	</head>
+	<body>
+		<h1>Create New Post</h1>
+		<h2><a href="{% url 'post_list' %}">Home</a></h2>
+		<form method="POST">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<button type="submit">Publish</button>
+		</form>
+	</body>
+</html>
+
