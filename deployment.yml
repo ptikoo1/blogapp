@@ -17,10 +17,10 @@ spec:
         image: ptikoo/my-django-blog
         ports:
         - containerPort: 8000
-          resources:
-            requests:
-              cpu: 100m
-              memory: 256Mi
-            limits:
-              cpu: 500m
-              memory: 512Mi
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
