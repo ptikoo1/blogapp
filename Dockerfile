@@ -9,4 +9,6 @@ COPY . .
 
 RUN python manage.py collectstatic --noinput
 
+ENV PATH="/usr/local/bin:$PATH"
+
 CMD ["gunicorn", "myproject.wsgi:application", "--bind", "0.0.0.0:8000"]
