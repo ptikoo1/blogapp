@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!ak*lg2sc0^fe6ztcruql+pfj0iq%n3ud6^b70sld#1s%f=yto
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['10.244.0.5', '127.0.0.1', 'localhost', 'my-django-blog-service']
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
